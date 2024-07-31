@@ -43,7 +43,7 @@ elif rubro == "Temas tranversales(uso de fondo)":
         f = st.number_input("Cuentas por pagar (Lps)", 1, 10000000000000, 6000)
         g = st.number_input("Cuentas por cobrar (Lps)", 1, 1000000000000, 5000)
         h = e + g - f
-        st.write("##### Resultado del cálculo: Monto total necesario del capital de trabajo normal (GTQ):")
+        st.write("##### Resultado del cálculo: Monto total necesario del capital de trabajo normal (Lps.):")
         st.text(h)
         st.write("###### :blue[Cabe decir que el monto a prestar para el capital de trabajo normal no debe superar dicho monto.]")
 
@@ -69,10 +69,10 @@ elif rubro == "Temas tranversales(uso de fondo)":
     with col2:
         st.write("#### :blue[Herramienta para el análisis]", divider="blue") 
         st.write("###### :blue[Calculadora del valor presente neto del proyecto]")  
-        a = st.number_input("¿Cuánto se debe invertir al inicio del proyecto (Lps)?", 0, 10000000000000, 200000)
+        a = st.number_input("¿Cuánto se debe invertir al inicio del proyecto (Lps)?", 0, 10000000000000, 220000)
         b = st.number_input("¿Cuál es tasa de costo del capital del negocio (%)?", 0, 100, 11)
-        c = st.number_input("¿Cuánto podrá ganar al año por el proyecto de inversión? (De manera más precisa tiene que decirse como el flujo anual de caja, que es casi igual a ganancias menos depreciación: GTQ)", 1, 1000000000000, 60000)
-        d = st.number_input("Duración del proyecto (años)", 1, 100, 4)
+        c = st.number_input("¿Cuánto podrá ganar al año por el proyecto de inversión? (De manera más precisa tiene que decirse como el flujo anual de caja, que es casi igual a ganancias menos depreciación: Lps)", 1, 1000000000000, 60000)
+        d = st.number_input("Duración del proyecto (años)", 1, 100, 5)
         
         lst = [c for i in range(d)]
         lst0 = [-1 * a]
@@ -216,9 +216,9 @@ elif rubro == "Restaurante(Comedor)":
     
     E = a*d*(b/100)*c
     st.write("##### Resultado del cálculo: Monto esperado de la venta diaria en Lps")
-    st.text(E)
+    st.text(round(E))
     st.write("##### Resultado del cálculo: Monto esperado de la venta mensual en Lps")
-    st.text(E*e)
+    st.text(round(E*e))
         
 elif rubro == "Negocio de impresión":
     st.title("¿Cómo analizar la operación del Negocio de impresión?")

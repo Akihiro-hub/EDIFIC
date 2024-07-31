@@ -5,7 +5,7 @@ import pandas as pd
 rubro = st.sidebar.selectbox("Rubro de negocio a analizar", ["Seleccione", "Carpintería", "Panadería", "Restaurante(Comedor)", "Negocio de impresión", "Construcción", "Corte y confección", "Mercadito(Pulpería)", "Reparación del auto", "Temas tranversales(uso de fondo)"])
 
 if rubro == "Seleccione":
-    st.write("## Análisis de negocios (PyMEs) y sus solicitudes del crédito, mediante la entrevista y la visita por el colaborador de la cooperativa")
+    st.write("## Análisis de negocios (PyMEs) y sus solicitudes del crédito, mediante la entrevista y la visita por el Asesor de la Cooperativa")
     col1, col2 = st.columns(2)
     with col1: 
         st.write("### :blue[(Proyecto EDIFICA)]")

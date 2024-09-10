@@ -10,7 +10,7 @@ def main():
     while True:
         time.sleep(360 * 360)  
 
-rubro = st.sidebar.selectbox("Rubro de negocio a analizar", ["Seleccione", "Carpintería", "Panadería", "Restaurante(Comedor)", "Negocio de impresión", "Construcción", "Corte y confección", "Mercadito(Pulpería)", "Reparación del auto", "Temas tranversales(uso de fondo)"])
+rubro = st.sidebar.selectbox("Rubro de negocio (o tema) a analizar", ["Seleccione", "Carpintería", "Panadería", "Restaurante(Comedor)", "Negocio de impresión", "Construcción", "Corte y confección", "Mercadito(Pulpería)", "Reparación del auto", "Capital de trabajo", "Capital de inversiones", "Análisis de estados financieros"])
 
 if rubro == "Seleccione":
     st.write("## Análisis de negocios (PyMEs) y sus solicitudes del crédito, mediante la entrevista y la visita por el Asesor de la Cooperativa")

@@ -85,7 +85,7 @@ elif rubro == "Capital de inversiones":
         b = st.number_input("¿Cuál es tasa de costo del capital del negocio (%)?", 0, 100, 15)
     with col2:
         c = st.number_input("¿Cuánto podrá ganar al año por el proyecto de inversión? (De manera más precisa tiene que decirse como el flujo anual de caja, que es casi igual a ganancias menos depreciación: Lps)", 1, 1000000000000, 250000)
-        d = st.number_input("Duración del proyecto (años)", 1, 100, 8)
+        d = st.number_input("Duración del proyecto (años)", 1, 100, 7)
     
     lst = [c for i in range(d)]
     lst0 = [-1 * a]

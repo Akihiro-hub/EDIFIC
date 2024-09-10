@@ -40,11 +40,11 @@ elif rubro == "Capital de trabajo":
     st.write("##### :blue[Calculadora del monto total necesario del capital de trabajo normal del negocio]")  
     col1, col2, col3 = st.columns(3)
     with col1: 
-        e = st.number_input("Valor del inventario (Lps)", 1, 10000000000000, 8000)
+        e = st.number_input("Valor del inventario (Lps)", 1, 10000000000000, 85000)
     with col2:
-        f = st.number_input("Cuentas por pagar (Lps)", 1, 10000000000000, 2000)
+        f = st.number_input("Cuentas por pagar (Lps)", 1, 10000000000000, 25000)
     with col3:
-        g = st.number_input("Cuentas por cobrar (Lps)", 1, 1000000000000, 4000)
+        g = st.number_input("Cuentas por cobrar (Lps)", 1, 1000000000000, 43000)
     h = e + g - f
     st.write("##### Resultado del cálculo: Monto total necesario del capital de trabajo normal (Lps):")
     st.text(h)
@@ -81,11 +81,11 @@ elif rubro == "Capital de inversiones":
     st.write("##### :blue[Calculadora del valor presente neto del proyecto]")  
     col1, col2 = st.columns(2)
     with col1: 
-        a = st.number_input("¿Cuánto se debe invertir al inicio del proyecto (Lps)?", 0, 10000000000000, 50000)
-        b = st.number_input("¿Cuál es tasa de costo del capital del negocio (%)?", 0, 100, 12)
+        a = st.number_input("¿Cuánto se debe invertir al inicio del proyecto (Lps)?", 0, 10000000000000, 1050000)
+        b = st.number_input("¿Cuál es tasa de costo del capital del negocio (%)?", 0, 100, 15)
     with col2:
         c = st.number_input("¿Cuánto podrá ganar al año por el proyecto de inversión? (De manera más precisa tiene que decirse como el flujo anual de caja, que es casi igual a ganancias menos depreciación: Lps)", 1, 1000000000000, 20000)
-        d = st.number_input("Duración del proyecto (años)", 1, 100, 4)
+        d = st.number_input("Duración del proyecto (años)", 1, 100, 7)
     
     lst = [c for i in range(d)]
     lst0 = [-1 * a]
@@ -490,20 +490,20 @@ elif rubro == "Análisis de estados financieros":
 
     # 財務分析初期値
     initial_values = {
-        "Cash": 2000,
-        "Inventory": 8000,
-        "Other current assets": 5000,
-        "Fixed assets": 25000,
-        "Short term liabilities": 10000,
-        "Long term liabilities": 10000,
-        "Capital (equity)": 20000,
-        "Annual sales": 50000,
-        "Cost of sales (production)": 25000,
-        "Administrative expenses": 19000,
-        "Financial costs": 5000,
-        "Inventory0": 1000,
-        "Fixed assets0": 29000,    
-        "liabilities0": 17000,            
+        "Cash": 20000,
+        "Inventory": 80000,
+        "Other current assets": 50000,
+        "Fixed assets": 250000,
+        "Short term liabilities": 100000,
+        "Long term liabilities": 120000,
+        "Capital (equity)": 180000,
+        "Annual sales": 500000,
+        "Cost of sales (production)": 250000,
+        "Administrative expenses": 190000,
+        "Financial costs": 50000,
+        "Inventory0": 10000,
+        "Fixed assets0": 290000,    
+        "liabilities0": 170000,            
     }
 
     # ユーザー入力
